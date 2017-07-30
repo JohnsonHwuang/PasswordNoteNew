@@ -7,12 +7,28 @@
 //
 
 import UIKit
+import RealmSwift
 
 class RootViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setupNavBar()
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+    }
+    
+    func setupNavBar() {
+        self.navigationController?.navigationBar.tintColor = UIColor(red:0.33, green:0.69, blue:0.97, alpha:1.00)
+        
+        if #available(iOS 11.0, *) {
+//            self.navigationController?.navigationBar.prefersLargeTitles = false
+//            self.navigationItem.largeTitleDisplayMode = .automatic
+        } else {
+            // Fallback on earlier versions
+        }
     }
     
     override func didReceiveMemoryWarning() {
