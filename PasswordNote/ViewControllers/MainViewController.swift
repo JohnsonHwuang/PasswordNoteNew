@@ -98,8 +98,7 @@ class MainViewController: RootViewController, UITableViewDelegate, UITableViewDa
     // MARK: - UITableViewDelegate
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        
+        self.performSegue(withIdentifier: "kNoteDetail", sender: tableViewArray[indexPath.row])
     }
     
      // MARK: - Navigation
@@ -108,8 +107,19 @@ class MainViewController: RootViewController, UITableViewDelegate, UITableViewDa
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
      // Get the new view controller using segue.destinationViewController.
      // Pass the selected object to the new view controller.
-        if segue.identifier == "createNote" {
-            
+        switch segue.identifier {
+        case "kCreateNote"?:
+            break
+        case "kNoteDetail"?:
+            (segue.destination as! NoteDetailViewController).data = sender as? NoteModel
+            if #available(iOS 11.0, *) {
+                self.navigationController?.navigationBar.prefersLargeTitles = false
+            } else {
+                // Fallback on earlier versions
+            }
+            break
+        default:
+            break
         }
      }
     

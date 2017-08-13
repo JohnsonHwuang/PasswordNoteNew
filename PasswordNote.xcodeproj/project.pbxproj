@@ -10,6 +10,7 @@
 		A022EC7E1F2E5F6F00AB0B93 /* UIViewShakeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A022EC7D1F2E5F6F00AB0B93 /* UIViewShakeExtension.swift */; };
 		A02A21E91F22658E004FA954 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02A21E81F22658E004FA954 /* MainViewController.swift */; };
 		A02A21EB1F227025004FA954 /* Asstes.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A02A21EA1F227025004FA954 /* Asstes.xcassets */; };
+		A02CCBBE1F322AEB002FB4D3 /* NoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02CCBBD1F322AEB002FB4D3 /* NoteDetailViewController.swift */; };
 		A02EF8671F1FB41800A8303C /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02EF8661F1FB41800A8303C /* RootViewController.swift */; };
 		A02EF8691F1FBB5100A8303C /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02EF8681F1FBB5100A8303C /* MainTableViewCell.swift */; };
 		A0376B7F1F211E16001C1B1F /* CreateNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0376B7E1F211E16001C1B1F /* CreateNoteViewController.swift */; };
@@ -28,6 +29,7 @@
 		A022EC7D1F2E5F6F00AB0B93 /* UIViewShakeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewShakeExtension.swift; sourceTree = "<group>"; };
 		A02A21E81F22658E004FA954 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A02A21EA1F227025004FA954 /* Asstes.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Asstes.xcassets; sourceTree = "<group>"; };
+		A02CCBBD1F322AEB002FB4D3 /* NoteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailViewController.swift; sourceTree = "<group>"; };
 		A02EF85F1F1FAD4A00A8303C /* UIViewLayerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewLayerExtension.swift; sourceTree = "<group>"; };
 		A02EF8661F1FB41800A8303C /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		A02EF8681F1FBB5100A8303C /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 			children = (
 				A02A21E81F22658E004FA954 /* MainViewController.swift */,
 				A0376B7E1F211E16001C1B1F /* CreateNoteViewController.swift */,
+				A02CCBBD1F322AEB002FB4D3 /* NoteDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				A06276A11F0955E3003D0580 /* AppDelegate.swift in Sources */,
 				A022EC7E1F2E5F6F00AB0B93 /* UIViewShakeExtension.swift in Sources */,
 				A0376B7F1F211E16001C1B1F /* CreateNoteViewController.swift in Sources */,
+				A02CCBBE1F322AEB002FB4D3 /* NoteDetailViewController.swift in Sources */,
 				A02EF8691F1FBB5100A8303C /* MainTableViewCell.swift in Sources */,
 				A02A21E91F22658E004FA954 /* MainViewController.swift in Sources */,
 			);
