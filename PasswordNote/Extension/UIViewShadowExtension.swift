@@ -17,9 +17,9 @@ extension UIView {
         }
         set {
             if newValue {
-                self.layer.shadowColor = UIColor.gray.cgColor
+                self.layer.shadowColor = UIColor(red:0.94, green:0.94, blue:0.94, alpha:1.00).cgColor
                 self.layer.shadowOffset = CGSize.init(width: 0, height: 0)
-                self.layer.shadowOpacity = 0.1
+                self.layer.shadowOpacity = 0.4
                 self.layer.shadowRadius = 3
                 
                 let path = UIBezierPath()

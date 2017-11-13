@@ -24,13 +24,13 @@ class MainViewController: RootViewController, UITableViewDelegate, UITableViewDa
         // Do any additional setup after loading the view.
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        if #available(iOS 11.0, *) {
-            self.navigationController?.navigationBar.prefersLargeTitles = true
-        } else {
-            // Fallback on earlier versions
-        }
-    }
+//    override func viewWillAppear(_ animated: Bool) {
+//        if #available(iOS 11.0, *) {
+//            self.navigationController?.navigationBar.prefersLargeTitles = true
+//        } else {
+//            // Fallback on earlier versions
+//        }
+//    }
     
     override func viewDidLayoutSubviews() {
         self.createButton.layer.shadowColor = UIColor.gray.cgColor

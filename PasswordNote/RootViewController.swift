@@ -23,13 +23,21 @@ class RootViewController: UIViewController {
         self.navigationController?.navigationBar.tintColor = UIColor(red:0.33, green:0.69, blue:0.97, alpha:1.00)
         
         if #available(iOS 11.0, *) {
-//            self.navigationController?.navigationBar.prefersLargeTitles = false
-//            self.navigationItem.largeTitleDisplayMode = .automatic
+            self.navigationController?.navigationBar.prefersLargeTitles = true
+            self.navigationItem.largeTitleDisplayMode = .automatic
         } else {
             // Fallback on earlier versions
         }
+        if (self.navigationController?.viewControllers.count)! >= 2{
+            let backItem = UIBarButtonItem.init(image: UIImage.init(named: "backItem"), style: .plain, target: self, action: #selector(self.popVC))
+            self.navigationItem.leftBarButtonItem = backItem;
+        }
     }
     
+    func popVC() {
+        self.navigationController?.popViewController(animated: true)
+    }
+        
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
